@@ -48,3 +48,5 @@
     CREATE DATABASE test;
     GRANT ALL PRIVILEGES ON DATABASE test TO postgres;
     ```
+4. If the `.env` file is not read correctly, then try replacing the URL in `application-local.yaml` (not recommended for production environments but only for debugging).
+5. If the build fails without an error being popped up but with status code 137 (128+ code for `SIGKILL`) it is most likely that you are using a Linux distro and the JVM becomes `Out of  Memory`. To resolve this just use `no-daemon` flag while running the `./gradlew run` command.
