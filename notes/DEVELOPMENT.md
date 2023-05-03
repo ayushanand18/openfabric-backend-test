@@ -14,7 +14,11 @@
     # changed to
     distributionUrl=https\://services.gradle.org/distributions/gradle-7.4-all.zip
     ```
-2. Postgresql Setup of Ubuntu (execution permissions error)
+2. Build Gradle correctly before building the project.
+    ```sh
+    gradle wrapper
+    ```
+3. Postgresql Setup of Ubuntu (execution permissions error)
     a. To install execute
     ```sh
     sudo apt upgdate
