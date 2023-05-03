@@ -7,7 +7,8 @@
 #
 # ==============================================
 spring:
+  jpa:
+    open-in-view: false
   profiles:
     include: base,local
-
 
