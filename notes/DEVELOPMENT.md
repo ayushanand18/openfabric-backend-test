@@ -50,3 +50,9 @@
     ```
 4. If the `.env` file is not read correctly, then try replacing the URL in `application-local.yaml` (not recommended for production environments but only for debugging).
 5. If the build fails without an error being popped up but with status code 137 (128+ code for `SIGKILL`) it is most likely that you are using a Linux distro and the JVM becomes `Out of  Memory`. To resolve this just use `no-daemon` flag while running the `./gradlew run` command.
+6. Export the environment variables if they are not read directly from the `.env` file.
+    ```sh
+    export SPRING_DATASOURCE_URL=<jdbc url>
+    export SPRING_DATASOURCE_USERNAME=<username>
+    export SPRING_DATASOURCE_PASSWORD=<password>
+    ```
