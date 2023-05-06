@@ -33,3 +33,5 @@ replay_pid*
 
 # build
 build
+openfabric-api/build
+openfabric-api/bin
