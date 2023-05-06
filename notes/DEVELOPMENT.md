@@ -14,6 +14,8 @@
     # changed to
     distributionUrl=https\://services.gradle.org/distributions/gradle-7.4-all.zip
     ```
+
+    However, sometimes build will fail therefore it is better to downgrade JAVA to a compatible version with Gradle 6.8. JAVA 11 works smooth. To downgrade follow these steps in [this thread](https://askubuntu.com/questions/1133216/downgrading-java-11-to-java-8).
 2. Build Gradle correctly before building the project.
     ```sh
     gradle wrapper
