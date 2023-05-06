@@ -2,6 +2,8 @@
 
 Welcome! and thank you for applying!
 
+> **Note:** The assignment notes have been included in the [`notes/`](./notes/) directory. Thanks! -  Ayush.
+
 ## Requirement
 
 Your task is to add the necessary features to the current project's API blueprint structure to enable
